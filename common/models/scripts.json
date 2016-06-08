@@ -1,0 +1,59 @@
+{
+  "name": "Scripts",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "desc": {
+      "type": "string"
+    },
+    "icon_class": {
+      "type": "string"
+    },
+    "owner_cmd": {
+      "type": "string"
+    },
+    "short_desc": {
+      "type": "string"
+    },
+    "repo_link": {
+      "type": "string"
+    },
+    "npm_pkg_name": {
+      "type": "string"
+    },
+    "npm_pkg_location": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "default_cmd": {
+      "type": "string",
+      "required": true
+    },
+    "default_path": {
+      "type": "string",
+      "required": true
+    },
+    "default_settings": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

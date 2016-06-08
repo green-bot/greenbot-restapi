@@ -1,0 +1,46 @@
+{
+  "name": "Sessions",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "transcript": {
+      "type": [
+        "object"
+      ]
+    },
+    "src": {
+      "type": "string"
+    },
+    "dst": {
+      "type": "string"
+    },
+    "sessionKey": {
+      "type": "string"
+    },
+    "sessionId": {
+      "type": "string"
+    },
+    "collectedData": {
+      "type": "object"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "botId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

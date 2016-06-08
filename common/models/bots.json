@@ -1,0 +1,61 @@
+{
+  "name": "Bots",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "accountId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "scriptId": {
+      "type": "string"
+    },
+    "passcode": {
+      "type": "string"
+    },
+    "notificationEmailSubject": {
+      "type": "string"
+    },
+    "postConversationWebhook": {
+      "type": "string"
+    },
+    "ownerHandles": {
+      "type": [
+        "string"
+      ]
+    },
+    "settings": {
+      "type": [
+        "object"
+      ],
+      "comments": "\"name\" : \"MENU_PROMPT\", \t\t\t\"value\" : \"MENU_PROMPT\", \t\t\t\"type\" : \"text\""
+    },
+    "addresses": {
+      "type": [
+        "object"
+      ],
+      "comments": "\"networkHandleId\" : \"rCB4MAkjtz5ZoSHKh\", \t\t\t\"networkHandleName\" : \"development::aw3g7xrhpqzsnvngj\", \t\t\t\"keywords\" : [ \t\t\t\t\"test\" \t\t\t], \t\t\t\"network\" : \"development\""
+    },
+    "notificationEmails": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
