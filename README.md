@@ -29,7 +29,7 @@ The Network, user and NetworkHandle collections are not exposed through this API
 
 ## Bot Resource Description
 Field | Description
------   -----------
+----- |  -----------
 _id | The objectId of the bot. Corresponds to the MongoDB id
 accountId | The ID of the account that owns this bot.
 description | The description of this bot
