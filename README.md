@@ -42,3 +42,27 @@ notificationEmailSubject | The subject of the email sent to the list in notifica
 postConversationWebhook | A URL to post Session objects to at the end of the conversation
 addresses | An array of elements describing the network addresses that will trigger this bot. For a complete description of how these addresses work, please see _____. Each element defines a networkHandleId, used to track network porting requests, networkHandleName, a construct of the network name and the identifier (think twitter::@howethomas), an array of keywords that will trigger the start of this bot, and the actual network name of the address.
 ownerHandles | An array of network names (such as ['twitter::@howethomas', 'nexmo::16175551212']) that should be treated as owners of the bot. Some scripts have one executable for owners, and a different one for non-owners.  This controls the list of owners.
+
+## Script Resource Description
+Field | Description
+----- |  -----------
+_id | The objectId of the bot. Corresponds to the MongoDB id
+default_cmd | The command to run to start bots made from this script. Example 'npm start --loglevel silent'
+default_path | The cwd bots based on this script. Example './node_modules/not-available-bot'
+default_settings | An array of configuration options for the bots made from this script. Each element defines the name of the option, the actual value used in the bot, and type of configuration item it is.
+
+As an example:  
+	{
+    "name" : "PROMPT_1",
+    "value" : "Change me to change prompt 1",
+    "type" : "text"
+  }
+
+desc | The description of this bot. Example: 'A simple bot to tell the visitor that there isnt a bot to talk to, except this one, and it aint talking.'
+name | The human name of the bot.
+icon_class | The font-awesome icon to use when displaying bots based on this script. Example: 'information'
+owner_cmd | The command to run when owners message into sbots made from this script. Example 'bundle exec ruby owner.rb'
+short_desc | A shorter desc for summary display. Example: 'An under-construction bot'
+repo_link | A git repo where this script lives. Example:  "https://github.com/green-bot/not-available-bot"
+npm_pkg_name | The name in NPM for this script. Example: "not-available-bot"
+npm_pkg_location | The installation location for this script. Example: "./node_modules/not-available-bot"
