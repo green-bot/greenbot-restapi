@@ -50,14 +50,6 @@ _id | The objectId of the bot. Corresponds to the MongoDB id
 default_cmd | The command to run to start bots made from this script. Example 'npm start --loglevel silent'
 default_path | The cwd bots based on this script. Example './node_modules/not-available-bot'
 default_settings | An array of configuration options for the bots made from this script. Each element defines the name of the option, the actual value used in the bot, and type of configuration item it is.
-
-As an example:  
-	{
-    "name" : "PROMPT_1",
-    "value" : "Change me to change prompt 1",
-    "type" : "text"
-  }
-
 desc | The description of this bot. Example: 'A simple bot to tell the visitor that there isnt a bot to talk to, except this one, and it aint talking.'
 name | The human name of the bot.
 icon_class | The font-awesome icon to use when displaying bots based on this script. Example: 'information'
