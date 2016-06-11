@@ -58,3 +58,16 @@ short_desc | A shorter desc for summary display. Example: 'An under-construction
 repo_link | A git repo where this script lives. Example:  "https://github.com/green-bot/not-available-bot"
 npm_pkg_name | The name in NPM for this script. Example: "not-available-bot"
 npm_pkg_location | The installation location for this script. Example: "./node_modules/not-available-bot"
+
+## Session Resource Description
+Field | Description
+----- |  -----------
+_id | The objectId of the session. Corresponds to the MongoDB id
+transcript | An an array of messages from this session. Each element has the direction (ingress or egress), and the text of the message.
+src | The network handle of the source of conversation (the one that started it)
+dst | The network handle of the destination of the conversation (the one that receives it)
+sessionKey | An ordered pair of the near and far end network indentifier, same for all sessions between those to participants, but uniquely identifies this set of sessions.
+sessionId | A unique identifier for this session.
+collectedData | An object that contains data collected by the bot during this session.
+lang | The human language of the far end of this conversation
+botId | The objectId of the bot that had this conversation
